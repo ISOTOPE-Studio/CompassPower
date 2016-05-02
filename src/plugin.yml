@@ -1,0 +1,7 @@
+name: CompassPower
+main: cc.isotopestudio.CompassPower.CompassPower
+
+author: Mars
+description: CompassPower
+website: http://isotopestudio.cc
+version: 1.0.0
