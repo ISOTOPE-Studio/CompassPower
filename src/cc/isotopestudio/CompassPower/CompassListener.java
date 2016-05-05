@@ -13,8 +13,10 @@ import org.bukkit.inventory.ItemStack;
 public class CompassListener implements Listener {
 
 	@EventHandler
-	public void onClickScroll(PlayerInteractEvent event) {
+	public void onClickCompass(PlayerInteractEvent event) {
 		ItemStack item = event.getItem();
+		if (item == null)
+			return;
 		if (!item.getType().equals(Material.COMPASS))
 			return;
 		Player player = event.getPlayer();
